@@ -8,16 +8,16 @@ public class SchoolManagement {
 	public void Add()
 	{
 		Teacher newTeacher = new Teacher();
-		for(int i =0; i<Teachers.size(); i++)
-		{
-			while(newTeacher.getID()==Teachers.get(i).getID())
-			{
-				Scanner Scan= new Scanner(System.in);
-				System.out.print("\t\t\t\tEnter a valid ID. Previous ID already taken! ");
-				int id= Scan.nextInt();
-				newTeacher.setID(id);
-			}
-		}
+		//for(int i =0; i<Teachers.size(); i++)
+		//{
+		//	while(newTeacher.getID()==Teachers.get(i).getID())
+		//	{
+		//		Scanner Scan= new Scanner(System.in);
+		//		System.out.print("\t\t\t\tEnter a valid ID. Previous ID already taken! ");
+		//		int id= Scan.nextInt();
+		//		newTeacher.setID(id);
+		//	}
+		//}
 		Teachers.add(newTeacher);
 		System.out.print("\t\t\t\tTeacher Added To The List Suceessfully.\n");
 		return;

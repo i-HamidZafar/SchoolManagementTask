@@ -12,6 +12,7 @@ public class Teacher
 	private String City;
 	private String Country;
 	
+	static int idGenerator=1;
 	//Constructor with no parameters
 	public Teacher()
 	{
@@ -23,9 +24,7 @@ public class Teacher
 		 this.Birthday = scan.nextLine();
 		 System.out.print("\n\t\t\t\tEnter the Subject: ");
 		 this.Subject= scan.nextLine();
-		 System.out.print("\n\t\t\t\tEnter the ID: ");
-		 String id= scan.nextLine();
-		 this.ID = Integer.parseInt(id);
+		 this.ID = idGenerator++;
 		 System.out.print("\n\t\t\t\tEnter the Salary: ");
 		 String salary= scan.nextLine();
 		 this.Salary = Float.parseFloat(salary);
@@ -37,7 +36,7 @@ public class Teacher
 		 this.Country = scan.nextLine(); 	
 	}
 	//Parameterized Constructor
-	public Teacher(String Name,String Birthday ,String Subject, int ID, float Salary, String Address, String City, String Country) 
+	public Teacher(String Name,String Birthday ,String Subject, float Salary, String Address, String City, String Country) 
 	{
 		this.Name= Name;
 		this.Birthday= Birthday;
@@ -46,7 +45,7 @@ public class Teacher
 		this.Address= Address;
 		this.City= City;
 		this.Country= Country;
-		this.ID= ID;
+		this.ID= idGenerator++;
 	}
 	
 	//getters
@@ -96,7 +95,7 @@ public class Teacher
 	{
 		 this.Subject= Subject;
 	}
-	public void setID (int ID) 
+	private void setID (int ID) 
 	{
 		 this.ID = ID;
 	}	
