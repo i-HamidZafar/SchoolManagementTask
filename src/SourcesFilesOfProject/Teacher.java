@@ -3,51 +3,51 @@ import java.util.Scanner;
 
 public class Teacher 
 {
+	static int idGenerator=1;
 	private String Name;
 	private String Birthday;
 	private String Subject;
-	private int ID;
+	private int ID=idGenerator++;
 	private float Salary;
 	private String Address;
 	private String City;
 	private String Country;
 	
-	static int idGenerator=1;
-	//Constructor with no parameters
-	public Teacher()
-	{
-		Scanner scan= new Scanner(System.in);
-
-		 System.out.print("\n\t\t\t\tEnter the Name: ");
-		 this.Name = scan.nextLine();
-		 System.out.print("\n\t\t\t\tEnter the Birthday[DD/MN/YEAR]: ");
-		 this.Birthday = scan.nextLine();
-		 System.out.print("\n\t\t\t\tEnter the Subject: ");
-		 this.Subject= scan.nextLine();
-		 this.ID = idGenerator++;
-		 System.out.print("\n\t\t\t\tEnter the Salary: ");
-		 String salary= scan.nextLine();
-		 this.Salary = Float.parseFloat(salary);
-		 System.out.print("\n\t\t\t\tEnter the Address: ");
-		 this.Address = scan.nextLine();
-		 System.out.print("\n\t\t\t\tEnter the City: ");
-		 this.City = scan.nextLine();
-		 System.out.print("\n\t\t\t\tEnter the Country: ");
-		 this.Country = scan.nextLine(); 	
-	}
-	//Parameterized Constructor
-	public Teacher(String Name,String Birthday ,String Subject, float Salary, String Address, String City, String Country) 
-	{
-		this.Name= Name;
-		this.Birthday= Birthday;
-		this.Subject= Subject;
-		this.Salary= Salary;
-		this.Address= Address;
-		this.City= City;
-		this.Country= Country;
-		this.ID= idGenerator++;
-	}
 	
+	//Constructor with no parameters
+//	public Teacher()
+//	{
+//		Scanner scan= new Scanner(System.in);
+//		 System.out.print("\n\t\t\t\tEnter the Name: ");
+//		 this.Name = scan.nextLine();
+//		 System.out.print("\n\t\t\t\tEnter the Birthday[DD/MN/YEAR]: ");
+//		 this.Birthday = scan.nextLine();
+//		 System.out.print("\n\t\t\t\tEnter the Subject: ");
+//		 this.Subject= scan.nextLine();
+//		 this.ID = idGenerator++;
+//		 System.out.print("\n\t\t\t\tEnter the Salary: ");
+//		 String salary= scan.nextLine();
+//		 this.Salary = Float.parseFloat(salary);
+//		 System.out.print("\n\t\t\t\tEnter the Address: ");
+//		 this.Address = scan.nextLine();
+//		 System.out.print("\n\t\t\t\tEnter the City: ");
+//		 this.City = scan.nextLine();
+//		 System.out.print("\n\t\t\t\tEnter the Country: ");
+//		 this.Country = scan.nextLine(); 	
+//	}
+//	//Parameterized Constructor
+//	public Teacher(String Name,String Birthday ,String Subject, float Salary, String Address, String City, String Country) 
+//	{
+//		this.Name= Name;
+//		this.Birthday= Birthday;
+//		this.Subject= Subject;
+//		this.Salary= Salary;
+//		this.Address= Address;
+//		this.City= City;
+//		this.Country= Country;
+//		this.ID= idGenerator++;
+//	}
+//	
 	//getters
 	public String getName() 
 	{
@@ -83,15 +83,15 @@ public class Teacher
 	
 	
 	//Setters 
-	private void setName (String Name) 
+	public void setName (String Name) 
 	{
 		 this.Name = Name;
 	}
-	private void setBirthday (String Birthday)
+	public void setBirthday (String Birthday)
 	{
 		this.Birthday= Birthday;
 	}
-	private void setSubject (String Subject)
+	public void setSubject (String Subject)
 	{
 		 this.Subject= Subject;
 	}
@@ -99,19 +99,19 @@ public class Teacher
 	{
 		 this.ID = ID;
 	}	
-	private void setSalary (float salary) 
+	public void setSalary (float salary) 
 	{
-		 this.Salary= Salary;
+		 this.Salary= salary;
 	}
-	private void setAddress (String Address)
+	public void setAddress (String Address)
 	{
 		 this.Address= Address;
 	}
-	private void setCity (String City)
+	public void setCity (String City)
 	{
 		 this.City= City;
 	}
-	private void setCountry (String Country)
+	public void setCountry (String Country)
 	{
 		 this.Country= Country;
 	}
