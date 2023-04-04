@@ -40,31 +40,7 @@ public class SchoolManagement {
 		System.out.print("\n\t\t\t\tEnter the name of the teacher to search: ");
 		int counter=1;
 		String Name = scan.nextLine();
-//		boolean entryMatchFlag= false;
-//		for(int i= 0;i< Teachers.size();i++ )
-//		{
-//			if(Teachers.get(i).getName().equals(Name))
-//			{
-//				if(counter==1)
-//				{
-//					System.out.print("\n\t\t\t\tDetails of the teacher/teachers named:" + Name);
-//					entryMatchFlag=true;
-//					counter++;
-//				}
-//				System.out.print("\n\n\t\t\t\tName: "+ Teachers.get(i).getName());
-//				System.out.print("\n\t\t\t\tBirthday: "+ Teachers.get(i).getBirthday());
-//				System.out.print("\n\t\t\t\tSubject: "+ Teachers.get(i).getSubject());
-//				System.out.print("\n\t\t\t\tSalary: "+ Teachers.get(i).getSalary());
-//				System.out.print("\n\t\t\t\tAddress: "+ Teachers.get(i).getAddress());
-//				System.out.print("\n\t\t\t\tCity: "+ Teachers.get(i).getCity());
-//				System.out.print("\n\t\t\t\tCountry: "+ Teachers.get(i).getCountry());
-//				
-//				
-//			}
-//		}
-//		if(entryMatchFlag== false)
-//			System.out.println("\n\t\t\t\tName does not match any teacher in the list.");
-//		
+
 //	using contains method of array list but to implemented it with ArrayList of Class, the contains method needs to override
 		if(TeachersName.contains(Name)==true)
 		{
