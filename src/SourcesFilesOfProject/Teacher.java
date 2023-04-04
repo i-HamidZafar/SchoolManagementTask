@@ -12,7 +12,6 @@ public class Teacher
 	private String City;
 	private String Country;
 	
-	
 	//getters
 	public String getName() 
 	{
@@ -80,5 +79,4 @@ public class Teacher
 	{
 		 this.Country= Country;
 	}
-	/// privated cause not needed for now but might be needed in the future 
 }
