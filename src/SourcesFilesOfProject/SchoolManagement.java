@@ -162,21 +162,6 @@ public class SchoolManagement {
 			System.out.println("\n\t\t\t\tID does not match any teacher.");
 			return;
 		}
-//		boolean entryFlag= false;
-//		for(int i= 0;i< Teachers.size();i++ )
-//		{
-//			
-//			if(Teachers.get(i).getID()== id)
-//			{
-//				Teachers.remove(i);
-//				System.out.print("\n\t\t\t\tThe Teacher Has Been Removed From The List Successfully.\n");
-//				entryFlag=true;
-//				return;
-//			}
-//		}
-//		if(entryFlag== false)
-//			System.out.println("\n\t\t\t\tID does not match any teacher.");
-//		return;
 	}
 	
 	
